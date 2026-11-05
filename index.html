@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="uz" class="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>SwissWatch — soatlar butigi, 2002 yildan. Toshkent, Namangan</title>
+<meta name="description" content="SwissWatch premium boutique: West End Watch Co. rasmiy distribyutori. Toshkent, Langar ko‘chasi 12 va Namangan, A. Navoiy ko‘chasi 42. Rasm, video va narxlar bilan vitrina.">
+<meta property="og:title" content="SwissWatch — soatlar butigi, 2002 yildan">
+<meta property="og:description" content="West End Watch Co. rasmiy distribyutori. Toshkent va Namangandagi butiklar.">
+<meta property="og:image" content="assets/p/og.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#120d0a">
+<link rel="icon" href="assets/p/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Manrope:wght@400;500;600;700&family=Allura&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+<script type="importmap">{"imports":{"three":"./assets/lib/three.module.min.js"}}</script>
+<style>
+:root{
+  --ink:#120d0a;--ink2:#1c1511;--walnut:#3a2114;--paper:#f4efe6;--paper2:#e9e2d5;
+  --red:#b3232c;--brass:#c79a5b;--txt:#201813;--mute:#74675b;--line:rgba(32,24,19,.16);--lined:rgba(244,239,230,.16);
+  --serif:"Prata","Times New Roman",serif;--sans:"Manrope",system-ui,sans-serif;
+  --pad:clamp(20px,4.4vw,72px);
+}
+*{box-sizing:border-box;margin:0}
+html,body{overflow-x:clip;background:var(--ink);color:var(--paper);font:500 16px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+img,video{display:block;max-width:100%}
+html.uz [lang=ru],html.ru [lang=uz]{display:none!important}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+svg.i{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* header */
+.hd{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;gap:18px;padding:16px var(--pad);background:linear-gradient(rgba(18,13,10,.9),rgba(18,13,10,.55) 70%,transparent);transition:background .3s,color .3s,padding .3s}
+.hd.solid{background:rgba(18,13,10,.82);backdrop-filter:blur(14px);padding-block:10px}
+.hd.light{background:rgba(244,239,230,.9);color:var(--txt)}
+.logo{display:flex;align-items:center;gap:10px;margin-right:auto}
+.logo svg{width:30px;height:30px;flex:none}
+.logo b{font:400 21px/1 var(--serif);letter-spacing:-.01em}
+.nav{display:flex;gap:26px;font-size:14px}.nav a{opacity:.82;transition:opacity .2s}.nav a:hover{opacity:1}
+.tel{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;font-variant-numeric:tabular-nums}
+.lang{display:flex;border:1px solid currentColor;border-radius:99px;font-size:12px;font-weight:700;opacity:.9}
+.lang button{padding:5px 10px;border-radius:99px;min-height:30px}
+html.uz .lang [data-l=uz],html.ru .lang [data-l=ru]{background:var(--red);color:#fff}
+
+/* 3D story */
+#story{position:relative;height:460vh;background:radial-gradient(70% 60% at 68% 45%,#3c2415 0%,#1b120c 52%,var(--ink) 100%)}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
+#gl{position:absolute;inset:0;width:100%;height:100%;display:block}
+.stage::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(18,13,10,.75),transparent 16%,transparent 82%,rgba(18,13,10,.85))}
+.ch{position:absolute;z-index:2;left:var(--pad);top:50%;transform:translateY(-50%);width:min(560px,44vw);opacity:0;pointer-events:none}
+.ch.on{pointer-events:auto}
+.kick{font-size:12.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);margin-bottom:18px;display:flex;align-items:center;gap:12px}
+.kick::before{content:"";width:28px;height:1px;background:currentColor}
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.012em;line-height:1.06}
+h1{font-size:clamp(46px,6.6vw,104px)}
+.ch h2{font-size:clamp(36px,4.4vw,68px)}
+.lead{margin-top:22px;font-size:clamp(16px,1.25vw,19px);color:rgba(244,239,230,.78);max-width:46ch}
+.live{margin-top:26px;display:inline-flex;align-items:center;gap:12px;font-size:13.5px;color:rgba(244,239,230,.8)}
+.live i{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 0 0 rgba(179,35,44,.7);animation:pulse 2s infinite}
+.live time{font-variant-numeric:tabular-nums;font-weight:700;color:var(--paper)}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(179,35,44,0)}100%{box-shadow:0 0 0 0 rgba(179,35,44,0)}}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:12px 22px;border-radius:2px;font-weight:600;font-size:14.5px;transition:transform .2s,background .2s,color .2s,border-color .2s}
+.btn.red{background:var(--red);color:#fff}.btn.red:hover{background:#c92d36;transform:translateY(-1px)}
+.btn.line{border:1px solid rgba(244,239,230,.42)}.btn.line:hover{border-color:var(--paper);background:rgba(244,239,230,.08)}
+.scrollhint{position:absolute;z-index:2;left:var(--pad);bottom:26px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,239,230,.62);display:flex;align-items:center;gap:10px}
+.scrollhint u{display:block;width:1px;height:30px;background:linear-gradient(var(--brass),transparent);animation:drop 1.8s infinite;transform-origin:top}
+@keyframes drop{0%{transform:scaleY(0)}60%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+.note3d{position:absolute;z-index:2;right:var(--pad);bottom:24px;font-size:12px;padding:3px 8px;background:rgba(18,13,10,.72);color:rgba(244,239,230,.78)}
+
+/* configurator */
+.cfg{position:absolute;z-index:3;right:var(--pad);top:50%;transform:translateY(-50%);width:min(440px,38vw);opacity:0;pointer-events:none}
+.cfg.on{pointer-events:auto}
+.cfg h2{font-size:clamp(30px,3.2vw,50px)}
+.opt{margin-top:22px}.opt>label{display:flex;justify-content:space-between;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(244,239,230,.62);margin-bottom:10px}
+.opt>label b{font-weight:600;color:var(--paper);letter-spacing:0;text-transform:none;font-size:14px}
+.sw{display:flex;gap:10px;flex-wrap:wrap}
+.sw button{width:42px;height:42px;border-radius:50%;background:var(--c);box-shadow:inset 0 2px 6px rgba(255,255,255,.26),inset 0 -5px 9px rgba(0,0,0,.34);outline:1px solid rgba(255,255,255,.22);outline-offset:2px;transition:outline .15s,transform .2s}
+.sw button:hover{transform:scale(1.06)}.sw button[aria-pressed=true]{outline:2px solid var(--brass);outline-offset:3px}
+.seg{display:flex;border:1px solid rgba(244,239,230,.26);border-radius:2px}
+.seg button{flex:1;min-height:44px;font-size:14px;font-weight:600;transition:background .2s,color .2s}
+.seg button[aria-pressed=true]{background:var(--paper);color:var(--ink)}
+.cfgfoot{margin-top:22px;display:flex;gap:16px;align-items:stretch}
+.real{position:relative;width:106px;flex:none;aspect-ratio:3/4;border-radius:2px;overflow:hidden;background:#000;border:1px solid rgba(244,239,230,.2)}
+.real video{width:100%;height:100%;object-fit:cover}
+.real span{position:absolute;inset:auto 0 0;padding:14px 7px 6px;font-size:12px;line-height:1.2;background:linear-gradient(transparent,rgba(0,0,0,.82))}
+.pr{flex:1;display:flex;flex-direction:column;justify-content:space-between;gap:10px}
+.pr strong{font:400 34px/1 var(--serif)}.pr small{display:block;font-size:12.5px;color:rgba(244,239,230,.62);margin-top:5px}
+.pr .btn{width:100%}
+
+/* brand line */
+.brands{background:var(--paper);color:var(--txt);border-bottom:1px solid var(--line);overflow:hidden;padding:20px 0;white-space:nowrap}
+.brands div{display:inline-block;animation:mq 58s linear infinite;font:400 21px/1 var(--serif)}
+.brands span{margin:0 26px;opacity:.72}.brands em{font-style:normal;color:var(--red);font-size:12px;vertical-align:middle}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* showcase */
+.sec{padding:clamp(64px,8vw,120px) var(--pad)}
+#vitrina{background:var(--paper);color:var(--txt);position:relative}
+.sech{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:34px;flex-wrap:wrap}
+.sech h2{font-size:clamp(40px,5.6vw,84px)}
+.sech p{max-width:44ch;color:var(--mute);font-size:15.5px}
+#vitrina .kick{color:var(--red)}
+.fl{display:flex;gap:8px;overflow-x:auto;margin:0 calc(var(--pad)*-1) 28px;padding:2px var(--pad);scrollbar-width:none}
+.fl::-webkit-scrollbar{display:none}
+.fl button{flex:none;min-height:42px;padding:8px 17px;border:1px solid var(--line);border-radius:99px;font-size:13.5px;font-weight:600;transition:background .2s,color .2s,border-color .2s;white-space:nowrap}
+.fl button:hover{border-color:var(--txt)}
+.fl button[aria-pressed=true]{background:var(--txt);color:var(--paper);border-color:var(--txt)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(12px,1.6vw,24px) clamp(12px,1.6vw,24px)}
+.card{display:block;text-align:left;width:100%;position:relative;min-width:0}
+.card .ph{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--paper2)}
+.card img,.card video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1),opacity .35s}
+.card video{opacity:0}.card.play video{opacity:1}
+.card:hover img{transform:scale(1.04)}
+.badge{position:absolute;left:10px;top:10px;z-index:2;background:var(--red);color:#fff;font-size:12px;font-weight:700;letter-spacing:.04em;padding:4px 9px}
+.playi{position:absolute;right:10px;bottom:10px;z-index:2;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:rgba(18,13,10,.62);color:#fff;backdrop-filter:blur(6px)}
+.playi svg{width:13px;height:13px;fill:currentColor;stroke:none;margin-left:2px}
+.card .br{margin-top:13px;font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--mute)}
+.card h3{margin-top:5px;font-size:clamp(17px,1.45vw,21px);line-height:1.2}
+.card .sp{margin-top:6px;font-size:13px;line-height:1.4;color:var(--mute)}
+.card .pc{margin-top:9px;font-weight:700;font-size:15.5px;font-variant-numeric:tabular-nums}
+.card .pc.ask{font-weight:600;color:var(--red);font-size:14px}
+.gridnote{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);font-size:13.5px;color:var(--mute);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.gridnote a{color:var(--red);font-weight:600;display:inline-flex;gap:7px;align-items:center;min-height:32px}
+
+/* reels */
+#reels{background:var(--ink2);overflow:hidden}
+#reels .sech p{color:rgba(244,239,230,.68)}
+.rail{display:flex;gap:clamp(12px,1.5vw,20px);overflow-x:auto;margin:0 calc(var(--pad)*-1);padding:6px var(--pad) 14px;scroll-snap-type:x mandatory;scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+.reel{flex:none;width:clamp(208px,21vw,300px);aspect-ratio:9/16;position:relative;overflow:hidden;background:#000;scroll-snap-align:center}
+.reel video{width:100%;height:100%;object-fit:cover}
+.reel p{position:absolute;inset:auto 0 0;padding:44px 16px 15px;background:linear-gradient(transparent,rgba(0,0,0,.84));font-size:14px;line-height:1.3}
+.reel small{display:block;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--brass);margin-bottom:4px}
+
+/* boutiques */
+#butik{background:var(--paper);color:var(--txt)}
+#butik .kick{color:var(--red)}
+.bq{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(14px,2vw,28px)}
+.bqc{border-top:2px solid var(--txt);padding-top:18px;display:flex;flex-direction:column;gap:13px}
+.bqc h3{font-size:clamp(30px,3.4vw,50px)}
+.bqc address{font-style:normal;font-size:17px;font-weight:600}
+.bqc small{display:block;font-weight:500;color:var(--mute);font-size:14px;margin-top:3px}
+.bqc .act{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.bqc .btn.line{border-color:var(--line);color:var(--txt)}.bqc .btn.line:hover{border-color:var(--txt);background:transparent}
+
+/* footer */
+.ft{background:var(--ink);padding:44px var(--pad) calc(30px + env(safe-area-inset-bottom));display:grid;grid-template-columns:1.2fr auto;gap:24px;align-items:end}
+.ft .big{font:400 clamp(44px,8.6vw,130px)/1 var(--serif);letter-spacing:-.02em}
+.ft .scr{font:400 clamp(24px,3vw,44px)/1 "Allura",cursive;color:var(--brass);margin-top:2px}
+.ft nav{display:flex;flex-direction:column;gap:9px;text-align:right;font-size:14.5px}
+.ft nav a{display:inline-flex;gap:8px;align-items:center;justify-content:flex-end;min-height:30px}
+.ft nav a:hover{color:var(--brass)}
+.copy{grid-column:1/-1;font-size:12.5px;color:rgba(244,239,230,.5);border-top:1px solid var(--lined);padding-top:15px}
+
+/* modal */
+.md{position:fixed;inset:0;z-index:80;background:rgba(10,7,5,.8);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:clamp(10px,3vw,40px)}
+.md.on{display:flex}
+.mdb{background:var(--paper);color:var(--txt);width:min(880px,100%);max-height:92vh;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);overflow:auto;position:relative}
+.mdv{background:#000;aspect-ratio:4/5;min-height:100%}.mdv video,.mdv img{width:100%;height:100%;object-fit:cover}
+.mdc{padding:clamp(22px,3vw,38px);display:flex;flex-direction:column}
+.mdc h3{font-size:clamp(28px,3vw,40px);margin-top:7px}
+.mdc .sp{margin-top:15px;font-size:15px;color:var(--mute)}.mdc .pc{margin-top:18px;font:400 32px/1 var(--serif)}
+.mdc .act{margin-top:auto;padding-top:26px;display:flex;flex-direction:column;gap:9px}
+.mdc .btn.line{border-color:var(--line)}.mdc .btn.line:hover{border-color:var(--txt);background:transparent}
+.mdx{position:absolute;right:10px;top:10px;width:42px;height:42px;display:grid;place-items:center;background:rgba(244,239,230,.92);color:var(--txt);border-radius:50%;z-index:2}
+
+/* tablet & phone */
+@media (max-width:1040px){.nav{display:none}.grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:760px){
+  body{font-size:15px}
+  .hd{padding:12px 16px;gap:10px}.logo b{font-size:18px}.logo svg{width:26px;height:26px}
+  .tel span{display:none}.tel{width:40px;height:40px;justify-content:center;border:1px solid currentColor;border-radius:50%}
+  #story{height:400vh}
+  .ch{left:18px;right:18px;width:auto;top:auto;bottom:calc(30px + env(safe-area-inset-bottom));transform:none}
+  h1{font-size:clamp(42px,12.6vw,60px)}.ch h2{font-size:clamp(32px,9.6vw,46px)}
+  .lead{margin-top:12px;font-size:14.5px}.live{margin-top:12px;font-size:12.5px}.cta{margin-top:14px}.btn{min-height:46px;padding:10px 16px;font-size:14px}.cta .btn{flex:1;white-space:nowrap}.cta .btn svg{display:none}
+  html.ru h1{font-size:clamp(36px,10.6vw,52px)}
+  .kick{margin-bottom:9px;font-size:12px}
+  .stage::after{background:linear-gradient(180deg,rgba(18,13,10,.75),transparent 14%,transparent 44%,rgba(18,13,10,.86) 60%,rgba(18,13,10,.96))}
+  .scrollhint{display:none}.note3d{right:auto;left:12px;top:62px;bottom:auto}
+  .logo{min-height:40px}
+  .cfg{left:0;right:0;bottom:0;top:auto;width:auto;transform:none;padding:14px 16px calc(14px + env(safe-area-inset-bottom));background:linear-gradient(transparent,rgba(18,13,10,.9) 9%)}
+  .cfg h2{font-size:27px}
+  .opt{margin-top:11px}.opt>label{margin-bottom:6px;font-size:12px}
+  .sw button{width:36px;height:36px}.seg button{min-height:40px;font-size:13.5px}
+  .optrow{display:grid;grid-template-columns:1fr 1fr;gap:10px}.optrow .opt{margin-top:11px}
+  .cfgfoot{margin-top:12px;gap:10px}.real{width:60px;aspect-ratio:1/1.2}.real span{display:none}
+  .pr{flex-direction:row;align-items:center}.pr strong{font-size:24px;white-space:nowrap}.pr small{font-size:12px}.pr .btn{width:auto;flex:1;padding-inline:10px}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .sec{padding-block:58px}
+  .sech{margin-bottom:22px;gap:12px}
+  .bq{grid-template-columns:1fr;gap:34px}
+  .ft{grid-template-columns:1fr}.ft nav{text-align:left}.ft nav a{justify-content:flex-start}
+  .mdb{grid-template-columns:1fr;max-height:94vh}.mdv{aspect-ratio:1/1;min-height:0}
+  .card .sp{font-size:12.5px}
+}
+@media (prefers-reduced-motion:reduce){.brands div,.scrollhint u,.live i{animation:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 40 40"><rect width="40" height="40" fill="#b3232c"/><g stroke="#fff" fill="none" stroke-width="1"><path d="M17.8 0v40M21.6 0v40M0 17.8h40M0 21.6h40"/></g><rect x="17.8" y="17.8" width="3.8" height="3.8" fill="#fff"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path d="M6 3h3l1.6 4.8-2.2 1.5a13 13 0 0 0 6.3 6.3l1.5-2.2L21 15v3a3 3 0 0 1-3 3C10.3 21 3 13.7 3 6a3 3 0 0 1 3-3Z"/></symbol>
+  <symbol id="i-tg" viewBox="0 0 24 24"><path d="m21 4-3.2 16.2-5.6-4.1-2.8 2.7-.5-4.7L18 6.6 6.4 13.3 3 12.1 21 4Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5s7-6.2 7-11.5a7 7 0 1 0-14 0c0 5.3 7 11.5 7 11.5Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><path d="M17.2 6.8h.01"/></symbol>
+  <symbol id="i-yt" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="3.5"/><path d="m10 9.2 5 2.8-5 2.8V9.2Z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M6 4v16l14-8L6 4Z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<header class="hd" id="hd">
+  <a href="#top" class="logo" aria-label="SwissWatch"><svg><use href="#mark"/></svg><b>SwissWatch</b></a>
+  <nav class="nav">
+    <a href="#tanlash"><span lang="uz">Soat tanlash</span><span lang="ru">Подобрать</span></a>
+    <a href="#vitrina"><span lang="uz">Vitrina</span><span lang="ru">Витрина</span></a>
+    <a href="#reels"><span lang="uz">Videolar</span><span lang="ru">Видео</span></a>
+    <a href="#butik"><span lang="uz">Butiklar</span><span lang="ru">Бутики</span></a>
+  </nav>
+  <a class="tel" href="tel:+998885007000" aria-label="+998 88 500 70 00"><svg class="i"><use href="#i-tel"/></svg><span>+998 88 500 70 00</span></a>
+  <div class="lang" role="group" aria-label="Til"><button data-l="uz">UZ</button><button data-l="ru">RU</button></div>
+</header>
+
+<main id="top">
+<section id="story">
+  <div class="stage">
+    <canvas id="gl" aria-label="West End Watch Automatic soatining 3D modeli"></canvas>
+
+    <div class="ch on" id="c0">
+      <div class="kick"><span lang="uz">Soatlar butigi · 2002 yildan</span><span lang="ru">Часовой бутик · с 2002 года</span></div>
+      <h1><span lang="uz">Har bir soniya qadrli.</span><span lang="ru">Каждая секунда ценна.</span></h1>
+      <p class="lead"><span lang="uz">West End Watch Co. rasmiy distribyutori.</span><span lang="ru">Официальный дистрибьютор West End Watch Co.</span></p>
+      <div class="live"><i></i><span><span lang="uz">Toshkent vaqti:</span><span lang="ru">Время в Ташкенте:</span> <time id="clock">--:--:--</time></span></div>
+      <div class="cta">
+        <a class="btn red" href="#vitrina"><span lang="uz">Vitrinani ko‘rish</span><span lang="ru">Смотреть витрину</span><svg class="i"><use href="#i-arrow"/></svg></a>
+        <a class="btn line" href="#butik"><span lang="uz">Butiklar manzili</span><span lang="ru">Адреса бутиков</span></a>
+      </div>
+    </div>
+
+    <div class="ch" id="c1">
+      <div class="kick">West End Watch Co. · 1886</div>
+      <h2><span lang="uz">Yaqindan qarang.</span><span lang="ru">Посмотрите ближе.</span></h2>
+    </div>
+
+    <div class="ch" id="c2">
+      <div class="kick"><span lang="uz">Avtomatik mexanizm</span><span lang="ru">Автоматический механизм</span></div>
+      <h2><span lang="uz">Batareya kerak emas.</span><span lang="ru">Батарейка не нужна.</span></h2>
+    </div>
+
+    <div class="cfg" id="tanlash-panel">
+      <h2><span lang="uz">O‘zingiznikini tanlang</span><span lang="ru">Выберите свои</span></h2>
+      <div class="opt">
+        <label><span lang="uz">Terish rangi</span><span lang="ru">Цвет циферблата</span><b id="dName"></b></label>
+        <div class="sw" id="sw"></div>
+      </div>
+      <div class="optrow">
+        <div class="opt"><label><span lang="uz">Braslet</span><span lang="ru">Браслет</span></label>
+          <div class="seg" id="segB"><button data-v="jubilee" aria-pressed="true">Jubilee</button><button data-v="president" aria-pressed="false">President</button></div></div>
+        <div class="opt"><label><span lang="uz">O‘lcham</span><span lang="ru">Размер</span></label>
+          <div class="seg" id="segS"><button data-v="37" aria-pressed="false">37 mm</button><button data-v="41" aria-pressed="true">41 mm</button></div></div>
+      </div>
+      <div class="cfgfoot">
+        <div class="real"><video id="realV" muted loop playsinline preload="none"></video><span><span lang="uz">Butikdan kadr</span><span lang="ru">Кадр из бутика</span></span></div>
+        <div class="pr">
+          <div><strong>750$<span lang="uz" style="font-size:.5em"> dan</span><span lang="ru" style="font-size:.5em"> от</span></strong><small><span lang="uz">2 yil kafolat</span><span lang="ru">Гарантия 2 года</span></small></div>
+          <a class="btn red" id="cfgAsk" target="_blank" rel="noopener"><svg class="i"><use href="#i-tg"/></svg><span lang="uz">Telegramda so‘rash</span><span lang="ru">Спросить в Telegram</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="scrollhint" id="hint"><u></u><span lang="uz">Pastga suring</span><span lang="ru">Прокрутите вниз</span></div>
+    <div class="note3d" id="note3d"><span lang="uz">3D model tasviriy</span><span lang="ru">3D-модель иллюстративна</span></div>
+  </div>
+</section>
+<div id="tanlash" style="height:0"></div>
+
+<div class="brands" aria-hidden="true"><div id="mq"></div></div>
+
+<section class="sec" id="vitrina">
+  <div class="sech">
+    <div><div class="kick"><span lang="uz">Butikning o‘z kadrlari</span><span lang="ru">Кадры самого бутика</span></div>
+    <h2><span lang="uz">Vitrina</span><span lang="ru">Витрина</span></h2></div>
+  </div>
+  <div class="fl" id="fl" role="group"></div>
+  <div class="grid" id="grid"></div>
+  <div class="gridnote">
+    <span><span lang="uz">Aniq narxni administrator aytadi.</span><span lang="ru">Точную цену подскажет администратор.</span></span>
+    <a href="https://t.me/swisswatch_premium" target="_blank" rel="noopener"><span lang="uz">Telegram kanal</span><span lang="ru">Telegram-канал</span><svg class="i"><use href="#i-arrow"/></svg></a>
+  </div>
+</section>
+
+<section class="sec" id="reels">
+  <div class="sech">
+    <div><div class="kick"><span lang="uz">Butikdan videolar</span><span lang="ru">Видео из бутика</span></div>
+    <h2><span lang="uz">Qo‘lda qanday turadi</span><span lang="ru">Как сидят на руке</span></h2></div>
+  </div>
+  <div class="rail" id="rail"></div>
+</section>
+
+<section class="sec" id="butik">
+  <div class="sech">
+    <div><div class="kick"><span lang="uz">Keling, taqib ko‘ring</span><span lang="ru">Приходите примерить</span></div>
+    <h2><span lang="uz">Ikki butik</span><span lang="ru">Два бутика</span></h2></div>
+  </div>
+  <div class="bq">
+    <article class="bqc">
+      <h3><span lang="uz">Toshkent</span><span lang="ru">Ташкент</span></h3>
+      <address><span lang="uz">Langar ko‘chasi, 12</span><span lang="ru">Улица Лянгарская, 12</span>
+        <small><span lang="uz">Mo‘ljal: Marwa mehmonxonasi</span><span lang="ru">Ориентир: отель Marwa</span></small></address>
+      <div class="act">
+        <a class="btn red" href="https://maps.google.com/maps?q=41.327143465717,69.228815999248" target="_blank" rel="noopener"><svg class="i"><use href="#i-pin"/></svg><span lang="uz">Xaritada ochish</span><span lang="ru">Открыть на карте</span></a>
+        <a class="btn line" href="tel:+998885007000"><svg class="i"><use href="#i-tel"/></svg>+998 88 500 70 00</a>
+      </div>
+    </article>
+    <article class="bqc">
+      <h3><span lang="uz">Namangan</span><span lang="ru">Наманган</span></h3>
+      <address><span lang="uz">A. Navoiy ko‘chasi, 42</span><span lang="ru">Улица А. Навои, 42</span>
+        <small><span lang="uz">Mo‘ljal: Shodlik savdo markazi</span><span lang="ru">Ориентир: торговый центр Shodlik</span></small></address>
+      <div class="act">
+        <a class="btn red" href="https://www.google.com/maps/search/?api=1&query=Namangan%2C%20A.%20Navoiy%2042" target="_blank" rel="noopener"><svg class="i"><use href="#i-pin"/></svg><span lang="uz">Xaritada ochish</span><span lang="ru">Открыть на карте</span></a>
+        <a class="btn line" href="https://t.me/SwissWatch_admin" target="_blank" rel="noopener"><svg class="i"><use href="#i-tg"/></svg>@SwissWatch_admin</a>
+      </div>
+    </article>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div><div class="big">SwissWatch</div><div class="scr">premium boutique</div></div>
+  <nav aria-label="Aloqa">
+    <a href="tel:+998885007000"><svg class="i"><use href="#i-tel"/></svg>+998 88 500 70 00</a>
+    <a href="https://t.me/swisswatch_premium" target="_blank" rel="noopener"><svg class="i"><use href="#i-tg"/></svg>Telegram</a>
+    <a href="https://www.instagram.com/swisswatch_premium/" target="_blank" rel="noopener"><svg class="i"><use href="#i-ig"/></svg>Instagram</a>
+    <a href="https://www.youtube.com/@Swisswatch.premiumboutique" target="_blank" rel="noopener"><svg class="i"><use href="#i-yt"/></svg>YouTube</a>
+  </nav>
+  <div class="copy">© SwissWatch premium boutique, 2002–2026. <span lang="uz">Barcha brend nomlari o‘z egalariga tegishli.</span><span lang="ru">Все названия брендов принадлежат их владельцам.</span></div>
+</footer>
+
+<div class="md" id="md" role="dialog" aria-modal="true"><div class="mdb">
+  <button class="mdx" id="mdx" aria-label="Yopish"><svg class="i"><use href="#i-x"/></svg></button>
+  <div class="mdv" id="mdv"></div>
+  <div class="mdc" id="mdc"></div>
+</div></div>
+
+<script src="assets/lib/gsap.min.js"></script>
+<script src="assets/lib/ScrollTrigger.min.js"></script>
+<script src="assets/lib/lenis.min.js"></script>
+<script type="module" src="assets/app.js"></script>
+</body>
+</html>
